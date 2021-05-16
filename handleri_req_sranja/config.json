@@ -1,0 +1,13 @@
+{
+    "BOT_TOKEN": "bot-token",
+    "SERVER_URL": "server-ip",
+    "SERVER_LOGO": "fivem-logo.png",
+    "SERVER_NAME": "server name",
+    "PREFIX": "",
+    "CHANNELS_ID":{
+        "SUGGESTIONS":"",
+        "MEMES":"",
+        "ANIMALS":""
+    }
+    
+}

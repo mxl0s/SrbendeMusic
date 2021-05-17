@@ -13,8 +13,6 @@ module.exports = {
 
         const user = message.mentions.members.first()
 		let person = message.mentions.members.first(message, args[0]);
-    let idk2 = parseInt(args[1])
-    let idk3 = parseInt(args[0])
     let member = db.fetch(`money_${message.author.id}`)
 
   let embed1 = new Discord.MessageEmbed()

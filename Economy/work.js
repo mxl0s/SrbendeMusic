@@ -24,7 +24,7 @@ module.exports = {
 .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
 .setDescription(`Već si skoro radio. Radi opet za: **${time.minutes}m** **${time.seconds}s**`)
 .setColor("#3371FF")
-
+.setTimestamp();
   let beg = await db.fetch(`work_${user.id}`);
 
   if (beg !== null && timeout - (Date.now() - beg) > 0) {
@@ -39,6 +39,7 @@ module.exports = {
       .setAuthor('Tvoj Posao', message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`${job}`)
       .setColor("#3371FF")
+      .setTimestamp();
       .setFooter(`${message.author.tag}`)
                 message.inlineReply({
   embed: embed,

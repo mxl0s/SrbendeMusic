@@ -15,6 +15,7 @@ module.exports = {
     .setColor("#3371FF")
 	  .setThumbnail("https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png")
     .setFooter("Kucaj !buy [ime stvari] da je kupiš! Da je koristiš, !use [stvar]")
+    .setTimestamp();
     message.channel.send(embed)
 
 

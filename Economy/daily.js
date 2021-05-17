@@ -23,7 +23,7 @@ module.exports = {
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Pokupio si Daily od ${coins} coinsa!`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   let daily = await db.fetch(`daily_${user.id}`);
 
   if (daily !== null && timeout - (Date.now() - daily) > 0) {
@@ -34,6 +34,7 @@ module.exports = {
     .setTitle('SM | Daily reward 🎁')
     .addField('❌ Pokupljen Daily', `Pokupi ga opet za **${time.hours}**h **${time.minutes}**m **${time.seconds}**s`)
     .setColor("RED")
+    .setTimestamp();
         message.inlineReply({
   embed: timeEmbed,
   allowedMentions: { repliedUser: false }

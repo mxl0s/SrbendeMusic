@@ -21,37 +21,37 @@ let user = message.author;
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Nemaš Dovoljno Coinsa`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   const success = new Discord.MessageEmbed()
   .setAuthor('Srbende Music | 🏦 Deposit', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Uspešno depositao **${args[0]}** Coinsa u banku!`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   const suma = new Discord.MessageEmbed()
   .setAuthor('Srbende Music | 🏦 Deposit', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Unesi sumu!`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   const negative = new Discord.MessageEmbed()
   .setAuthor('Srbende Music | 🏦 Deposit', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Ne možeš negativan deposit napraviti!`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   const broke = new Discord.MessageEmbed()
   .setAuthor('Srbende Music | 🏦 Deposit', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Nemaš dovoljno para!`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   const success2 = new Discord.MessageEmbed()
   .setAuthor('Srbende Music | 🏦 Deposit', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
   .setDescription(`Uspešno depositao **${args[0]}** Coinsa u banku!`)
   .setColor("#3371FF")
-
+  .setTimestamp();
   let member = db.fetch(`money_${user.id}`)
 
   if (args[0] == 'all') {

@@ -23,13 +23,13 @@ module.exports = {
     .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
     .setDescription(`Unesi količinu!`)
     .setColor("#3371FF")
-
+    .setTimestamp();
     const bruh2 = new Discord.MessageEmbed()
     .setAuthor('Srbende Music | 🎰 Slots', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
     .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
     .setDescription(`Nemaš dovoljno para!`)
     .setColor("#3371FF")
-
+    .setTimestamp();
   let bal = db.fetch(`money_${user.id}`)
   if (bal === null) bal = 0;
 
@@ -56,6 +56,7 @@ module.exports = {
             .setTitle("SM | Slots ✔️")
 			.setDescription(` Džep: **${bal + money}** Coins\nBanka: **${bank}** Coins`)
             .setColor("GREEN")
+            .setTimestamp();
         message.channel.send(slotsEmbed1)
         db.add(`money_${user.id}`, money)
     } else {
@@ -64,6 +65,7 @@ module.exports = {
             .setTitle(`Maler, izgubio si ${money} coinsa!`)
 			.setDescription(`Džep: **${bal - money}** Coins\nBanka: **${bank}** Coins`)
             .setColor("RED")
+            .setTimestamp();
         message.channel.send(slotsEmbed)
         db.subtract(`money_${user.id}`, money)
     }

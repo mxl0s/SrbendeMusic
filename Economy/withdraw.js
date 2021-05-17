@@ -16,31 +16,31 @@ module.exports = {
     .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
     .setDescription(`Izvukao si sve pare iz banke!`)
     .setColor("GREEN")
-
+    .setTimestamp();
     const bruh2 = new Discord.MessageEmbed()
     .setAuthor('Srbende Music | 🏦 Withdraw', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
     .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
     .setDescription(`Unesi količinu!`)
     .setColor("#3371FF")
-
+    .setTimestamp();
     const bruh3 = new Discord.MessageEmbed()
     .setAuthor('Srbende Music | 🏦 Withdraw', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
     .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
     .setDescription(`Ne možeš negativan broj uneti!`)
     .setColor("#3371FF")
-
+    .setTimestamp();
     const bruh4 = new Discord.MessageEmbed()
     .setAuthor('Srbende Music | 🏦 Withdraw', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
     .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
     .setDescription(`Nemaš dovoljno novca!`)
     .setColor("RED")
-
+    .setTimestamp();
     const bruh5 = new Discord.MessageEmbed()
 .setAuthor('Srbende Music | 🏦 Withdraw', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
 .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")
 .setDescription(`Uspešno si izvukao ${args[0]} coinsa iz banke!`)
 .setColor("GREEN")
-
+.setTimestamp();
   let user = message.author;
   let member2 = db.fetch(`bank_${user.id}`)
 

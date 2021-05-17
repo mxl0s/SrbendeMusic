@@ -3,7 +3,7 @@
 ////////////////////////////
 const ytdl = require("discord-ytdl-core");
 const { canModifyQueue } = require("../util/MilratoUtil");
-const { Client, Collection, MessageEmbed, splitMessage, escapeMarkdown,MessageAttachment } = require("discord.js");
+const { MessageEmbed, splitMessage, escapeMarkdown } = require("discord.js");
 const { attentionembed } = require("../util/attentionembed"); 
 const createBar = require("string-progressbar");
 const lyricsFinder = require("lyrics-finder");
@@ -11,9 +11,9 @@ const lyricsFinder = require("lyrics-finder");
 //////COMMAND BEGIN/////////
 ////////////////////////////
 module.exports = {
-  async play(song, message, client, filters) {
+  async play(song, message, filters) {
     //VERY MESSY CODE WILL BE CLEANED SOON!
-    const { PRUNING, SOUNDCLOUD_CLIENT_ID } = require("../config.json");
+    const { PRUNING } = require("../config.json");
 
     const queue = message.client.queue.get(message.guild.id);
     

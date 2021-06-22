@@ -17,7 +17,7 @@ module.exports = {
 
   let timeout = 86400000;
   let amount = 1500;
-  let coins = Math.round(Math.random() * 250 + 200);
+  let coins = 1000;
   const dailyembed = new Discord.MessageEmbed()
   .setAuthor('Srbende Music | 🎁 Daily', 'https://cdn.discordapp.com/app-icons/802583582022697011/817941229e62f9dc8f6219ab6ef21a10.png')
   .setThumbnail("https://cdn.discordapp.com/app-icons/807706628278583346/c7df1f389b00c9c0f58ebbf162956e2b.png")

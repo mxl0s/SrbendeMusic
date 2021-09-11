@@ -39,7 +39,7 @@ module.exports = {
       .setAuthor('Tvoj Posao', message.author.displayAvatarURL({ dynamic: true }))
       .setDescription(`${job}`)
       .setColor("#3371FF")
-      .setTimestamp();
+      .setTimestamp()
       .setFooter(`${message.author.tag}`)
                 message.inlineReply({
   embed: embed,

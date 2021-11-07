@@ -12,7 +12,7 @@ module.exports = { // Update To Your Handler
     async execute(message, args) {
 
       let user = message.mentions.users.first();
-      if(!user) message.author;
+      if(!user) 
         
 
         async function work() {

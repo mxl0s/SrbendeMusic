@@ -57,8 +57,7 @@ module.exports = {
 						}).catch(() => {return i++;});
 							if(i===1) return message.reply("Vreme ti je isteklo!");
 							var date2 = new Date();
-						if(x===msg) return message.reply(`**Wow, pun pogodak!:** \n\nTrebalo ti je \`${(date2-date)/1000} sekundi\``);
-						else return message.reply("**Beep-boop, greška!**"); 
+						return x===msg ? message.reply(`**Wow, pun pogodak!:** \n\nTrebalo ti je \`${(date2-date)/1000} sekundi\``) : message.reply("**Beep-boop, greška!**"); 
     
     }
 }

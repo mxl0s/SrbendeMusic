@@ -266,7 +266,7 @@ module.exports = {
             message.react("✅");
           return result.edit(lyricsEmbed).catch(console.error);
 
-          break;
+          
           //pause
         case "⏯":
           reaction.users.remove(user).catch(console.error);
